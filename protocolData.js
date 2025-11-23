@@ -1,48 +1,57 @@
 window.protocolData = {
+  // Mainnet Deployment: The live Compound protocol deployment on the Ethereum main network.
   "mainnet": {
     "cTokens": [
+      // cREP (Compound Augur): Legacy token address
       {
         "name": "Compound Augur",
         "token_address": "0x158079ee67fce2f58472a96584a73c7ab9ac95c1",
         "underlying_address": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
         "symbol": "REP"
       },
+      // cSAI (Compound Sai): Single-Collateral Dai (SAI) market—likely deprecated/legacy.
       {
         "name": "Compound Sai",
         "token_address": "0xf5dce57282a584d2746faf1593d3121fcac444dc",
         "underlying_address": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
         "symbol": "SAI"
       },
+      // cUSDC (Compound USD Coin)
       {
         "name": "Compound USD Coin",
         "token_address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
         "underlying_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
         "symbol": "USDC"
       },
+      // cETH (Compound Ether): Underlying address is null as it's the native token.
       {
         "name": "Compound Ether",
         "token_address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
         "underlying_address": null,
         "symbol": "ETH"
       },
+      // cZRX (Compound 0x)
       {
         "name": "Compound 0x",
         "token_address": "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407",
         "underlying_address": "0xe41d2489571d322189246dafa5ebde1f4699f498",
         "symbol": "ZRX"
       },
+      // cBAT (Compound Basic Attention Token)
       {
         "name": "Compound Basic Attention Token",
         "token_address": "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e",
         "underlying_address": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
         "symbol": "BAT"
       },
+      // cDAI (Compound Dai)
       {
         "name": "Compound Dai",
         "token_address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
         "underlying_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
         "symbol": "DAI"
       },
+      // cWBTC (Compound Wrapped BTC)
       {
         "name": "Compound Wrapped BTC",
         "token_address": "0xc11b1268c1a384e55c48c2391d8d480264a3a7f4",
@@ -50,64 +59,77 @@ window.protocolData = {
         "symbol": "WBTC"
       }
     ],
+    // The main risk management and governance contract on Mainnet.
     "comptroller": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b"
   },
+
+  // Ropsten Testnet Deployment
   "ropsten": {
     "cTokens": [
+      // cSAI (SAI market)
       {
         "name": "Compound SAI 📈",
         "token_address": "0xccaf265e7492c0d9b7c2f0018bf6382ba7f0148d",
         "underlying_address": "0x6f964c8c8c31b89d553ffdb30ef8f667cfbd0b9f",
         "symbol": "SAI"
       },
+      // cREP (REP market)
       {
         "name": "Compound Augur 📈",
         "token_address": "0x5d4373f8c1af21c391ad7ec755762d8dd3cca809",
         "underlying_address": "0x0a1e4d0b5c71b955c0a5993023fc48ba6e380496",
         "symbol": "REP"
       },
+      // cWBTC (WBTC market)
       {
         "name": "Compound Wrapped BTC 📈",
         "token_address": "0x4d15ee7de1f86248c986f5ae7dce855b1c1a8806",
         "underlying_address": "0xd83f707f003a1f0b1535028ab356fce2667ab855",
         "symbol": "WBTC"
       },
+      // cBAT (BAT market)
       {
         "name": "Compound Basic Attention Token 📈",
         "token_address": "0xa253295ec2157b8b69c44b2cb35360016daa25b1",
         "underlying_address": "0x9636246bf34e688c6652af544418b38eb51d2c43",
         "symbol": "BAT"
       },
+      // cUSDT (USDT market)
       {
         "name": "Compound USDT",
         "token_address": "0xb6f7f1901ffbcbadf9cd9831a032395105bc3142",
         "underlying_address": "0x6ee856ae55b6e1a249f04cd3b947141bc146273c",
         "symbol": "USDT"
       },
+      // cZRX (0x market)
       {
         "name": "Compound 0x 📈",
         "token_address": "0x3a728dd027ad6f76cdea227d5cf5ba7ce9390a3d",
         "underlying_address": "0x19787bcf63e228a6669d905e90af397dca313cfc",
         "symbol": "ZRX"
       },
+      // cTBTC (Trustless Bitcoin market)
       {
         "name": "Compound Trustless Bitcoin 📈",
         "token_address": "0xb40d042a65dd413ae0fd85becf8d722e16bc46f1",
         "underlying_address": "0x083f652051b9cdbf65735f98d83cc329725aa957",
         "symbol": "TBTC"
       },
+      // cDAI (MultiCollateral DAI market)
       {
         "name": "Compound MultiCollateral DAI 📈",
         "token_address": "0x6ce27497a64fffb5517aa4aee908b1e7eb63b9ff",
         "underlying_address": "0xb5e5d0f8c0cba267cd3d7035d6adc8eba7df7cdd",
         "symbol": "DAI"
       },
+      // cUSDC (USDC market)
       {
         "name": "Compound USD Coin 📈",
         "token_address": "0x20572e4c090f15667cf7378e16fad2ea0e2f3eff",
         "underlying_address": "0x8a9447df1fb47209d36204e6d56767a33bf20f9f",
         "symbol": "USDC"
       },
+      // cETH (ETH market)
       {
         "name": "Compound Ether 📈",
         "token_address": "0x1d70b01a2c3e3b2e56fcdcefe50d5c5d70109a5d",
@@ -117,6 +139,8 @@ window.protocolData = {
     ],
     "comptroller": "0xe03718b458a2e912141cf3fc8dab648362ee7463"
   },
+
+  // Rinkeby Testnet Deployment
   "rinkeby": {
     "cTokens": [
       {
@@ -137,6 +161,7 @@ window.protocolData = {
         "underlying_address": "0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea",
         "symbol": "DAI"
       },
+      // cETH (ETH market)
       {
         "name": "Compound Ether 📈",
         "token_address": "0xd6801a1dffcd0a410336ef88def4320d6df1883e",
@@ -164,6 +189,8 @@ window.protocolData = {
     ],
     "comptroller": "0x2eaa9d77ae4d8f9cdd9faacd44016e746485bddb"
   },
+
+  // Kovan Testnet Deployment
   "kovan": {
     "cTokens": [
       {
@@ -211,6 +238,8 @@ window.protocolData = {
     ],
     "comptroller": "0x1f5d7f3caac149fe41b8bd62a3673fe6ec0ab73b"
   },
+
+  // Goerli Testnet Deployment
   "goerli": {
     "cTokens": [
       {
@@ -231,6 +260,7 @@ window.protocolData = {
         "underlying_address": "0xD87Ba7A50B2E7E660f678A895E4B72E7CB4CCd9C",
         "symbol": "USDC"
       },
+      // cZRX (0x market)
       {
         "name": "Compound 0x",
         "token_address": "0xa253295ec2157b8b69c44b2cb35360016daa25b1",
@@ -249,12 +279,15 @@ window.protocolData = {
         "underlying_address": "0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60",
         "symbol": "DAI"
       },
+      // cWBTC (WBTC market)
+      // !!! DATA ERROR: This underlying_address (0xe4E81Fa...) is identical to the ZRX underlying address above. This is incorrect.
       {
         "name": "Compound Wrapped BTC",
         "token_address": "0xa253295ec2157b8b69c44b2cb35360016daa25b1",
         "underlying_address": "0xe4E81Fa6B16327D4B78CFEB83AAdE04bA7075165",
         "symbol": "WBTC"
       }
+      // !!! DATA INCONSISTENCY: Compound Ether (cETH) is missing from the Goerli cTokens list.
     ],
     "comptroller": "0x627ea49279fd0de89186a58b8758ad02b6be2867"
   }
